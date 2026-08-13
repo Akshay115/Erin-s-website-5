@@ -1,7 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { EmberCursor, PaperCover } from './components/Chrome';
+import { EmberCursor, PaperCover, SmoothScroll } from './components/Chrome';
+import 'lenis/dist/lenis.css';
 import Home from './pages/Home';
 import {
   About,
@@ -26,6 +27,7 @@ import './styles.css';
 function App() {
   return (
     <BrowserRouter>
+      <SmoothScroll />
       <EmberCursor />
       <PaperCover />
       <Routes>

@@ -118,20 +118,21 @@ export function Botanical({ name = 'lotus', className = '' }) {
   if (name === 'hibiscus') {
     return (
       <Frame {...common}>
-        <circle cx="40" cy="40" r="6" fill={gold} />
-        <path d="M40 18c8 8 8 16 0 22-8-6-8-14 0-22Z" fill={hibiscus} opacity=".55" stroke={ink} strokeWidth=".9" />
-        <path d="M62 40c-8 8-16 8-22 0 6-8 14-8 22 0Z" fill={hibiscus} opacity=".55" stroke={ink} strokeWidth=".9" />
-        <path d="M40 62c-8-8-8-16 0-22 8 6 8 14 0 22Z" fill={hibiscus} opacity=".55" stroke={ink} strokeWidth=".9" />
-        <path d="M18 40c8-8 16-8 22 0-6 8-14 8-22 0Z" fill={hibiscus} opacity=".55" stroke={ink} strokeWidth=".9" />
+        <path d="M40 70c0-10 2-22 2-32" stroke={ink} strokeWidth="1.15" />
+        <circle cx="40" cy="36" r="5" fill={gold} />
+        {[0, 60, 120, 180, 240, 300].map((a) => (
+          <path key={a} d="M40 20c6 6 7 12 0 16-7-4-6-10 0-16Z" fill={hibiscus} fillOpacity=".5" stroke={ink} strokeWidth=".85" transform={`rotate(${a} 40 36)`} />
+        ))}
+        <path d="M42 52c8 4 14 10 16 18" stroke={teal} strokeWidth=".8" />
       </Frame>
     );
   }
   if (name === 'frangipani') {
     return (
       <Frame {...common}>
-        <circle cx="40" cy="40" r="5" fill={gold} />
+        <circle cx="40" cy="40" r="4.5" fill={gold} />
         {[0, 72, 144, 216, 288].map((a) => (
-          <ellipse key={a} cx="40" cy="24" rx="7" ry="16" fill={cream} stroke={ink} strokeWidth=".9" transform={`rotate(${a} 40 40)`} />
+          <path key={a} d="M40 18c5 4 8 12 5 18-4 2-8 2-10 0-3-6 0-14 5-18Z" fill={cream} stroke={ink} strokeWidth=".9" transform={`rotate(${a} 40 40)`} />
         ))}
       </Frame>
     );
@@ -139,36 +140,74 @@ export function Botanical({ name = 'lotus', className = '' }) {
   if (name === 'coconut') {
     return (
       <Frame {...common}>
-        <path d="M36 70c4-28 6-44 8-58" stroke={ink} strokeWidth="1.3" />
-        <path d="M44 18c12 6 22 8 28 4-6 10-8 22-2 32-14-2-24-2-34 6 6-14 6-28 8-42Z" fill={teal} opacity=".2" stroke={ink} strokeWidth="1.1" />
-        <path d="M42 22c10 4 18 4 24 0" stroke={gold} strokeWidth=".8" />
+        <path d="M34 74c3-22 6-40 8-56" stroke={ink} strokeWidth="1.35" />
+        <path d="M42 20c16 4 28 6 34 2" stroke={ink} strokeWidth="1.05" />
+        <path d="M42 22c18 10 26 22 22 36" stroke={ink} strokeWidth="1" />
+        <path d="M42 24c8 14 10 26 4 40" stroke={teal} strokeWidth=".9" />
+        <path d="M42 22c-16 6-26 4-32-2" stroke={ink} strokeWidth="1" />
+        <path d="M42 24c-14 12-18 24-12 38" stroke={gold} strokeWidth=".8" />
       </Frame>
     );
   }
   if (name === 'tulsi') {
     return (
       <Frame {...common}>
-        <path d="M40 70V18" stroke={ink} strokeWidth="1.2" />
-        <path d="M40 30c-12-2-16-12-12-18 8 2 12 8 12 18 0-10 4-16 12-18 4 6 0 16-12 18Z" fill={teal} opacity=".25" stroke={ink} strokeWidth=".9" />
-        <path d="M40 46c-14-2-18-12-12-20 8 2 12 10 12 20 0-10 4-18 12-20 6 8 2 18-12 20Z" fill={teal} opacity=".2" stroke={ink} strokeWidth=".9" />
+        <path d="M40 72V16" stroke={ink} strokeWidth="1.15" />
+        {[22, 34, 46, 58].map((y, i) => (
+          <g key={y}>
+            <path d={`M40 ${y}c-10-1-14-7-11-13 6 1 10 6 11 13`} fill={teal} fillOpacity=".22" stroke={ink} strokeWidth=".85" />
+            <path d={`M40 ${y}c10-1 14-7 11-13-6 1-10 6-11 13`} fill={teal} fillOpacity=".22" stroke={ink} strokeWidth=".85" />
+          </g>
+        ))}
+        <circle cx="40" cy="16" r="2" fill={gold} />
       </Frame>
     );
   }
-  if (name === 'areca' || name === 'banana') {
+  if (name === 'banana') {
     return (
       <Frame {...common}>
-        <path d="M22 66c10-20 18-40 20-54" stroke={ink} strokeWidth="1.2" />
-        <path d="M42 16c18 10 26 28 18 48-16-8-26-20-30-40 8 4 12 8 12-8Z" fill={teal} opacity=".22" stroke={ink} strokeWidth="1" />
+        <path d="M18 70c14-18 24-36 28-54" stroke={ink} strokeWidth="1.3" />
+        <path d="M46 16c16 12 24 30 16 50-14-6-22-18-26-36" fill={teal} fillOpacity=".18" stroke={ink} strokeWidth="1.05" />
+        <path d="M44 28c8 8 12 18 10 30" stroke={gold} strokeWidth=".75" />
+      </Frame>
+    );
+  }
+  if (name === 'areca') {
+    return (
+      <Frame {...common}>
+        <path d="M40 74V28" stroke={ink} strokeWidth="1.2" />
+        {[0, 1, 2, 3, 4].map((i) => (
+          <path key={i} d={`M40 30c${-18 + i * 2} ${8 + i * 4} ${-16 + i} ${18 + i * 5} ${-8 + i} ${28 + i * 3}`} stroke={ink} strokeWidth=".85" />
+        ))}
+        {[0, 1, 2, 3, 4].map((i) => (
+          <path key={`r${i}`} d={`M40 30c${18 - i * 2} ${8 + i * 4} ${16 - i} ${18 + i * 5} ${8 - i} ${28 + i * 3}`} stroke={teal} strokeWidth=".8" />
+        ))}
       </Frame>
     );
   }
   return (
     <Frame {...common}>
-      <circle cx="40" cy="48" r="4" fill={gold} />
-      <path d="M40 20c10 10 12 20 0 28-12-8-10-18 0-28Z" fill={cream} stroke={ink} strokeWidth="1" />
-      <path d="M22 38c10 2 16 8 18 16-10-2-16-8-18-16Z" fill={hibiscus} opacity=".35" stroke={ink} strokeWidth=".9" />
-      <path d="M58 38c-10 2-16 8-18 16 10-2 16-8 18-16Z" fill={hibiscus} opacity=".35" stroke={ink} strokeWidth=".9" />
+      <circle cx="40" cy="50" r="3.5" fill={gold} />
+      <path d="M40 18c9 9 12 18 0 28-12-10-9-19 0-28Z" fill={cream} stroke={ink} strokeWidth="1" />
+      <path d="M22 36c10 2 16 9 18 18-11-2-17-9-18-18Z" fill={hibiscus} fillOpacity=".35" stroke={ink} strokeWidth=".9" />
+      <path d="M58 36c-10 2-16 9-18 18 11-2 17-9 18-18Z" fill={hibiscus} fillOpacity=".35" stroke={ink} strokeWidth=".9" />
+      <path d="M28 58c8 6 16 8 24 0" stroke={ink} strokeWidth=".8" />
     </Frame>
+  );
+}
+
+export function BodyLandscape({ className = '' }) {
+  return (
+    <svg className={`body-landscape ${className}`} viewBox="0 0 320 420" fill="none" aria-hidden="true">
+      <path d="M40 360c30-40 50-90 62-150 8-40 18-70 40-96 16-18 38-28 58-24 22 4 38 22 48 48 14 38 22 90 34 140 8 34 22 62 48 82" stroke={ink} strokeWidth="1.4" />
+      <path d="M86 360c24-50 40-110 52-168" stroke={laterite} strokeWidth="1" />
+      <path d="M20 372c80 8 140 4 180-6 50-12 80-8 110 6" stroke={teal} strokeWidth="1.2" />
+      <path d="M30 388c90 6 150 2 200-8" stroke={teal} strokeWidth=".8" opacity=".7" />
+      <circle className="belly-sun" cx="168" cy="188" r="22" fill={gold} />
+      <circle cx="168" cy="188" r="22" stroke={ink} strokeWidth="1" />
+      <path d="M168 158c10 8 12 18 0 28-12-10-10-20 0-28Z" fill={cream} stroke={ink} strokeWidth=".7" />
+      <path d="M70 250c20-30 40-40 70-36" stroke={ink} strokeWidth=".8" opacity=".6" />
+    </svg>
   );
 }
 
@@ -322,4 +361,11 @@ export const arts = {
   horizon: '/illustrations/horizon-dawn.jpg',
   wheel: '/illustrations/seasonal-wheel.jpg',
   agni: '/illustrations/agni-horizon.jpg',
+  hibiscus: '/illustrations/botanicals/wash-03.jpg',
+  frangipani: '/illustrations/botanicals/wash-04.jpg',
+  tulsi: '/illustrations/botanicals/wash-01.jpg',
+  lotus: '/illustrations/botanicals/wash-02.jpg',
+  coconut: '/illustrations/botanicals/coconut.jpg',
+  banana: '/illustrations/botanicals/banana.jpg',
+  areca: '/illustrations/botanicals/areca.jpg',
 };

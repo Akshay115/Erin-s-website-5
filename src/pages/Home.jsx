@@ -7,6 +7,7 @@ import {
   LiveMoon,
   OfferingMark,
   Botanical,
+  BodyLandscape,
   IconArrow,
   IconPin,
   arts,
@@ -61,7 +62,8 @@ export default function Home() {
       <section className="belly section-pad" id="belly">
         <div className="belly-art reveal">
           <img src={arts.agni} alt="Ink drawing of a laterite coast with a gold sun on the horizon — the digestive fire." loading="lazy" width="720" height="960" />
-          <span className="belly-caption">Agni — the digestive fire, the solar plexus.</span>
+          <BodyLandscape />
+          <span className="belly-caption">Agni — the digestive fire, the solar plexus. The body drawn as a coastline.</span>
         </div>
         <div className="belly-copy">
           <Eyebrow>Inner Fire Alchemy</Eyebrow>

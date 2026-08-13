@@ -23,6 +23,7 @@ import {
   useMagnetic,
 } from '../lib/motion';
 import { setSoundOn, hushSound, setSoundBed } from '../lib/sound';
+import { useLenis } from '../lib/lenis';
 
 export function Meta({ title, description, type = 'website' }) {
   useEffect(() => {
@@ -111,6 +112,11 @@ export function PaperCover() {
   }, [location.pathname, location.search, navigate, reduced]);
 
   return <div className={`paper-cover ${phase}`} aria-hidden="true" />;
+}
+
+export function SmoothScroll() {
+  useLenis();
+  return null;
 }
 
 export function EmberCursor() {

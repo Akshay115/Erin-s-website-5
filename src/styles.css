@@ -46,7 +46,7 @@ em {
   font-weight: 400;
   color: var(--laterite);
 }
-.section-pad { padding: 110px max(6vw, 28px); }
+.section-pad { padding: 110px max(6vw, 28px); content-visibility: auto; contain-intrinsic-size: 1px 720px; }
 .eyebrow {
   display: block;
   text-transform: uppercase;
@@ -241,8 +241,11 @@ body.cursor-hot .cursor-ring {
 
 /* Belly */
 .belly { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8vw; align-items: center; }
-.belly-art { overflow: hidden; }
+.belly-art { overflow: hidden; position: relative; }
 .belly-art img { width: 100%; display: block; border-radius: 2px; object-fit: cover; clip-path: inset(0 0 6% 0); }
+.body-landscape { position: absolute; right: 6%; bottom: 10%; width: 42%; opacity: .92; pointer-events: none; }
+.body-landscape .belly-sun { transform-origin: center; animation: sunlit 2.2s var(--ease) both; }
+.chapter-wash { width: 100%; max-width: 168px; margin-bottom: 16px; filter: sepia(.12) saturate(.9); }
 .belly-caption { display: block; margin-top: 12px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #6a5a48; }
 .belly h2, .manifesto h2, .section-title h2, .scope h2, .retreat-intro h2, .monthly h2, .newsletter h2, .wheel-copy h2, .place-strip h2 {
   font-size: clamp(42px, 5.4vw, 84px); line-height: .98;

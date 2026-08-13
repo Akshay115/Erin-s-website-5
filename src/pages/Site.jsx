@@ -55,6 +55,7 @@ export function About() {
       {aboutChapters.map((c) => (
         <section className="editorial section-pad about-chapter" key={c.id}>
           <div className="editorial-aside">
+            {arts[c.botanical] && <img src={arts[c.botanical]} alt="" className="chapter-wash" loading="lazy" width="320" height="320" />}
             <Botanical name={c.botanical} />
             <Eyebrow>{c.land}</Eyebrow>
             <span>{c.kicker}</span>
@@ -242,19 +243,61 @@ export function Offerings() {
 function ChapterExtra({ slug }) {
   const phase = useMemo(() => moonPhase(), []);
   const name = useMemo(() => moonName(), []);
-  if (slug === 'sacred-fall-reset') {
-    return (
-      <div className="chapter-extra">
-        <p className="extra-kicker">November new moon · Women only · Live on Zoom</p>
-        <ul>
-          <li>Weekly circle, tea education, Vedic-inspired teaching</li>
-          <li>Chakra-aligned meditations and simple daily ritual</li>
-          <li>Reset means attentive routine, not punishment</li>
-        </ul>
-      </div>
-    );
-  }
-  if (slug === 'moon-circle') {
+  const extras = {
+    'intuitive-session': {
+      kicker: 'One reading · not a diagnosis',
+      items: ['A single live session, then a written roadmap', 'Education across belly, habits and energy', 'No scan, no lab, no promised reversal'],
+    },
+    'mentoring': {
+      kicker: 'Twelve weeks · application',
+      items: ['Weekly sessions plus boundaried WhatsApp', 'Agni, rhythm and the long work of change', 'An intake screens for needs outside scope'],
+    },
+    'sacred-fall-reset': {
+      kicker: 'November new moon · Women only · Live on Zoom',
+      items: ['Weekly circle, tea education, Vedic-inspired teaching', 'Chakra-aligned meditations and simple daily ritual', 'Reset means attentive routine, not punishment'],
+    },
+    'spring-maiden': {
+      kicker: 'The Maiden · waitlist',
+      items: ['Lighter meals, hydration, small beginnings', 'No mandatory cleanse or liver claim', 'Plant-rich education, not a restrictive diet'],
+    },
+    'summer-wild-woman': {
+      kicker: 'The Wild Woman · waitlist',
+      items: ['Expressive movement and cooling nourishment', 'Solar-plexus themed meditation', 'Heat, injury and pregnancy modify every practice'],
+    },
+    'winter-mystic': {
+      kicker: 'The Mystic · waitlist',
+      items: ['Warm food, rest, unhurried inner life', 'Sleep-supportive routines', 'No demand for constant output'],
+    },
+    'kundalini-tantra-yoga': {
+      kicker: 'Private movement · Goa or online',
+      items: ['Shaped to the person in the room', 'Breath retention is never assumed', 'Injury and pregnancy must be named first'],
+    },
+    'energy-healing': {
+      kicker: 'Contemplative · subjective',
+      items: ['Breath, rest, attention, the field', 'Not treatment for pain, trauma or illness', 'Any touch is optional and consented'],
+    },
+    'moon-circle': { moon: true },
+    'yoga-meditation-barre': {
+      kicker: 'Class, private, or group',
+      items: ['Yoga and barre build different qualities', 'Low-impact options always available', 'Consent-based adjustments only'],
+    },
+    'sip-cacao-meditate': {
+      kicker: 'Anahata · the heart chakra · Mandrem',
+      note: 'Cacao is offered as a labeled serving. A cacao-free place in the circle is always held. Cacao contains caffeine and theobromine.',
+    },
+    'five-day-reset': {
+      kicker: 'Five days · five elements · coming',
+      items: ['One element and one ritual each day', 'No fasting required', 'A short door before a live container'],
+    },
+    'embodied-woman': {
+      kicker: 'Ten weeks · women only · waitlist',
+      items: ['Movement, mindset, nourishment, expression', 'Not sexuality therapy or trauma treatment', 'Every practice is optional'],
+    },
+    'inner-fire-immersion': { map: true },
+  };
+  const extra = extras[slug];
+  if (!extra) return null;
+  if (extra.moon) {
     return (
       <div className="chapter-extra moon-extra">
         <LiveMoon phase={phase} />
@@ -267,15 +310,7 @@ function ChapterExtra({ slug }) {
       </div>
     );
   }
-  if (slug === 'sip-cacao-meditate') {
-    return (
-      <div className="chapter-extra">
-        <p className="extra-kicker">Anahata · the heart chakra · Mandrem</p>
-        <p>Cacao is offered as a labeled serving. A cacao-free place in the circle is always held. Cacao contains caffeine and theobromine.</p>
-      </div>
-    );
-  }
-  if (slug === 'inner-fire-immersion') {
+  if (extra.map) {
     return (
       <div className="chapter-extra map-extra">
         <p className="extra-kicker">Drawn after a conversation, not sold as a package</p>
@@ -289,7 +324,19 @@ function ChapterExtra({ slug }) {
       </div>
     );
   }
-  return null;
+  return (
+    <div className={`chapter-extra extra-${slug}`}>
+      <p className="extra-kicker">{extra.kicker}</p>
+      {extra.note && <p>{extra.note}</p>}
+      {extra.items && (
+        <ul>
+          {extra.items.map((x) => (
+            <li key={x}>{x}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }
 
 export function Detail() {
@@ -298,7 +345,7 @@ export function Detail() {
   if (!o) return <NotFound />;
   return (
     <Frame title={o.title} description={o.intro} element={o.element}>
-      <PageHero eyebrow={`${o.number} · ${o.category} · ${o.audience}`} title={o.title.replace(' & ', ' &<br/>')} text={o.intro} image={o.image} />
+      <PageHero eyebrow={`${o.number} · ${o.category} · ${o.audience} · ${o.element}`} title={o.title.replace(' & ', ' &<br/>')} text={o.intro} image={o.image} />
       <section className="detail section-pad">
         <aside>
           <OfferingMark slug={o.slug} />
