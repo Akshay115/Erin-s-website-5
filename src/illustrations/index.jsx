@@ -18,12 +18,10 @@ function Frame({ children, className = '', view = '0 0 80 80', ...rest }) {
 export function Monogram({ className = '' }) {
   return (
     <Frame className={`monogram ${className}`} view="0 0 64 64">
-      <path d="M8 50c10-2 16-10 24-22 8 12 14 20 24 22" stroke={ink} strokeWidth="1.4" strokeLinecap="round" />
-      <path d="M18 50c7-14 11-24 14-36" stroke={ink} strokeWidth="1.6" strokeLinecap="round" />
-      <path d="M46 50c-7-14-11-24-14-36" stroke={ink} strokeWidth="1.6" strokeLinecap="round" />
-      <path d="M24 38h16" stroke={laterite} strokeWidth="1.1" strokeLinecap="round" />
-      <circle cx="32" cy="14" r="3.2" fill={gold} />
-      <path d="M32 9.2c1.4 1.6 1.4 3.2 0 4.8-1.4-1.6-1.4-3.2 0-4.8Z" fill={cream} stroke={ink} strokeWidth=".7" />
+      <circle cx="32" cy="32" r="28" stroke="#c9a05a" strokeWidth="1.1" />
+      <path d="M18 46c8-2 11-9 14-22 3 13 6 20 14 22" stroke={ink} strokeWidth="1.7" strokeLinecap="round" />
+      <path d="M32 14c1.8 2 1.8 4.1 0 6.1-1.8-2-1.8-4.1 0-6.1Z" fill="#c9a05a" />
+      <circle cx="32" cy="20.6" r="2.4" fill="#c9a05a" />
     </Frame>
   );
 }

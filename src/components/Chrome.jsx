@@ -290,6 +290,7 @@ export function Header() {
           <NavLink to="/about">Her story</NavLink>
           <NavLink to="/approach">The work</NavLink>
           <NavLink to="/offerings">Offerings</NavLink>
+          <NavLink to="/seasons">Seasons</NavLink>
           <NavLink to="/goa">Goa</NavLink>
           <MagneticLink className="nav-cta" to="/contact">
             Begin <IconArrow />

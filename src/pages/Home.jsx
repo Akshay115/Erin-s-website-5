@@ -7,7 +7,6 @@ import {
   LiveMoon,
   OfferingMark,
   Botanical,
-  BodyLandscape,
   IconArrow,
   IconPin,
   arts,
@@ -58,10 +57,17 @@ export default function Home() {
         </a>
       </section>
 
+      <div className="verb-strip" aria-hidden="true">
+        <span>Nourish</span>
+        <span>Move</span>
+        <span>Breathe</span>
+        <span>Ritual</span>
+        <span>Embody</span>
+      </div>
+
       <section className="belly section-pad" id="belly">
         <div className="belly-art reveal">
           <img src={arts.agni} alt="" loading="lazy" width="720" height="960" />
-          <BodyLandscape />
         </div>
         <div className="belly-copy">
           <Eyebrow>Inner Fire Alchemy</Eyebrow>
@@ -188,7 +194,7 @@ export default function Home() {
       )}
 
       <section className="closing-note section-pad" id="begin">
-        <p className="script-quote">When you create a sanctuary within, everything you are seeking finds you.</p>
+        <p className="script-quote">Live in your body. Love your life. Create your magic.</p>
         <div className="hero-actions center">
           <Button to="/contact" tone="dark">
             Begin a conversation <IconArrow />
