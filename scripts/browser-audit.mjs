@@ -2,7 +2,7 @@ import { chromium } from 'playwright';
 
 const baseUrl = process.env.AUDIT_BASE_URL || 'http://127.0.0.1:4173';
 const browser = await chromium.launch({ headless: true });
-const routes = ['/', '/about', '/work', '/offerings', '/offerings/sacred-fall-reset', '/offerings/kundalini-tantra-yoga', '/retreats', '/journal', '/journal/seasonal-living', '/faq', '/contact', '/privacy', '/terms'];
+const routes = ['/', '/about', '/approach', '/offerings', '/offerings/sacred-fall-reset', '/offerings/kundalini-tantra-yoga', '/seasons', '/moon', '/retreats', '/goa', '/journal', '/journal/seasonal-living', '/faq', '/contact', '/privacy', '/terms'];
 for (const viewport of [{ name: 'desktop', width: 1440, height: 900 }, { name: 'mobile', width: 390, height: 844 }]) {
   const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
   for (const route of routes) {
@@ -11,7 +11,8 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 900 }, { name: '
     const response = await page.goto(`${baseUrl}${route}`, { waitUntil: 'networkidle' });
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
     const title = await page.title();
-    if (!response || response.status() !== 200 || errors.length || overflow) throw new Error(`${viewport.name} ${route}: status=${response?.status()} title=${title} overflow=${overflow} errors=${errors.join('|')}`);
+    const skip = await page.locator('.skip-link').count();
+    if (!response || response.status() !== 200 || errors.length || overflow || !skip) throw new Error(`${viewport.name} ${route}: status=${response?.status()} title=${title} overflow=${overflow} skip=${skip} errors=${errors.join('|')}`);
     if (route === '/') await page.screenshot({ path: `/tmp/opencode/airin-${viewport.name}.png`, fullPage: true });
   }
   await page.close();
@@ -19,7 +20,7 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 900 }, { name: '
 
 const navigationPage = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 await navigationPage.goto(`${baseUrl}/`, { waitUntil: 'networkidle' });
-await navigationPage.getByRole('link', { name: 'Explore the work' }).click();
+await navigationPage.getByRole('link', { name: 'Offerings' }).first().click();
 await navigationPage.waitForURL('**/offerings');
 await navigationPage.getByRole('heading', { name: 'Many paths. One return.' }).waitFor({ state: 'visible' });
 await navigationPage.locator('.offering-card').first().scrollIntoViewIfNeeded();
