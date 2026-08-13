@@ -49,7 +49,7 @@ export function About() {
             <br />
             <em>Aquarius</em>
           </h1>
-          <p>Health coach, teacher, ocean lover and lifelong student of the body’s quiet wisdom. A life led by the inner tide — from Maryland to Hawaii to Mandrem.</p>
+          <p>Certified holistic health coach, tantric yoga teacher, meditation and mystic guide, women’s wellness mentor. Lover of dance and the ocean. A life led by the inner tide — from Maryland to Hawaii to Mandrem.</p>
         </div>
       </section>
       {aboutChapters.map((c) => (
@@ -97,7 +97,7 @@ export function Approach() {
   const [active, setActive] = useState('fire');
   return (
     <Frame title="Inner Fire Alchemy" description="A whole-person practice shaped by five elements and grounded in daily life." element={active}>
-      <PageHero eyebrow="The approach" title="The body is<br/><em>the beginning.</em>" text="Ancient attention. Modern life. A practice shaped by the body, the elements and the rhythms of nature." image={images.ritual} />
+      <PageHero eyebrow="The approach" title="Inner Alchemy.<br/><em>Sacred living.</em>" text="Movement, nourishment, cleansing, meditation, breath, nervous system and intentional living — ancient wisdom beside modern holistic health." image={images.ritual} />
       <section className="manifesto section-pad">
         <Eyebrow>Inner Fire Alchemy</Eyebrow>
         <div className="manifesto-grid">
@@ -107,8 +107,8 @@ export function Approach() {
             in the <em>belly.</em>
           </h2>
           <div>
-            <p className="lead">The work begins by making space to notice what your body, habits and inner life are communicating.</p>
-            <p>Depending on the offering, that may include health coaching, nourishment practices, yoga, barre, breathwork, meditation, guided reflection, energy awareness, seasonal ritual — and, when it is appropriate, educational support around cleansing and digestive fire.</p>
+            <p className="lead">Creating a sanctuary within. Activate inner fire. Feel sexy and alive again.</p>
+            <p>The work weaves health coaching, clean eating, herbal remedies, educational detox and fasting support, yoga, dance, barre, breathwork, meditation, energy awareness and seasonal ritual. With women, it also cultivates Divine Feminine and a healthier masculine–feminine balance.</p>
           </div>
         </div>
       </section>
@@ -249,12 +249,12 @@ function ChapterExtra({ slug }) {
       items: ['A single live session, then a written roadmap', 'Education across belly, habits and energy', 'No scan, no lab, no promised reversal'],
     },
     'mentoring': {
-      kicker: 'Twelve weeks · application',
-      items: ['Weekly sessions plus boundaried WhatsApp', 'Agni, rhythm and the long work of change', 'An intake screens for needs outside scope'],
+      kicker: 'Twelve weeks · cleanse, gut, inner fire',
+      items: ['Intuitive scans and energy readings', 'Agni, gut restoration, tea and fasting education when screened', 'Dance, breath, Divine Feminine / masculine balance'],
     },
     'sacred-fall-reset': {
       kicker: 'November new moon · Women only · Live on Zoom',
-      items: ['Weekly circle, tea education, Vedic-inspired teaching', 'Chakra-aligned meditations and simple daily ritual', 'Reset means attentive routine, not punishment'],
+      items: ['Weekly educational detox protocols', 'Nutrition guidelines and tea remedies', 'Chakra, ritual, movement and sisterhood'],
     },
     'spring-maiden': {
       kicker: 'The Maiden · waitlist',
@@ -278,8 +278,8 @@ function ChapterExtra({ slug }) {
     },
     'moon-circle': { moon: true },
     'yoga-meditation-barre': {
-      kicker: 'Class, private, or group',
-      items: ['Yoga and barre build different qualities', 'Low-impact options always available', 'Consent-based adjustments only'],
+      kicker: 'Yoga · dance · barre · breath',
+      items: ['The body was made to move — including dance', 'Low-impact options always available', 'Consent-based adjustments only'],
     },
     'sip-cacao-meditate': {
       kicker: 'Anahata · the heart chakra · Mandrem',
@@ -291,7 +291,7 @@ function ChapterExtra({ slug }) {
     },
     'embodied-woman': {
       kicker: 'Ten weeks · women only · waitlist',
-      items: ['Movement, mindset, nourishment, expression', 'Not sexuality therapy or trauma treatment', 'Every practice is optional'],
+      items: ['Divine Feminine, vitality, sacred sexuality, mindset', 'Dance, nourishment, nervous system', 'Not sexuality therapy or trauma treatment — every practice optional'],
     },
     'inner-fire-immersion': { map: true },
   };
@@ -535,11 +535,11 @@ export function Retreats() {
       <section className="monthly section-pad dark">
         <Eyebrow light>Monthly at Anahata</Eyebrow>
         <h2>
-          Wellness & movement
+          Wellness, detox
           <br />
-          <em>retreats.</em>
+          <em>& movement.</em>
         </h2>
-        <p>Intimate Goa weekends for conscious movement, nourishing food, reflection and reset. Next date and format to be confirmed.</p>
+        <p>Intimate Goa weekends of conscious movement, dance, nourishing food, meditation and an educational detox rhythm. Next date and format to be confirmed.</p>
         <ArrowLink to="/contact?offering=anahata-monthly">Ask for the next date</ArrowLink>
       </section>
     </Frame>
@@ -591,7 +591,7 @@ export function Goa() {
 export function Journal() {
   return (
     <Frame title="Field notes" description="Reflections on nourishment, movement, ritual and the seasons." element="air">
-      <PageHero eyebrow="Field notes" title="Ideas for a<br/><em>more embodied life.</em>" text="Reflections on nourishment, movement, the nervous system, ritual and the seasons." image={images.moon} />
+      <PageHero eyebrow="Wisdom" title="Inspiration and<br/><em>education.</em>" text="Women’s health, gut and agni, herbal tea, mindset, meditation, yoga, dance, breath, nervous system, ritual, seasonal living and nourishment." image={images.moon} />
       <section className="notes section-pad">
         {articles.map((a, i) => (
           <Link className="note-card reveal" to={`/journal/${a.slug}`} key={a.slug}>
@@ -669,6 +669,7 @@ export function FAQ() {
     ['Is this medical care?', sharedSafety],
     ['Who should seek medical guidance first?', 'Anyone pregnant, taking medication, managing a health condition, recovering from an eating disorder or considering fasting, cleansing, herbs or significant dietary changes should consult an appropriate clinician first.'],
     ['What time zone is used?', 'All live times use India Standard Time, IST (UTC+5:30). Booking confirmations should also display your local time.'],
+    ['Do you work with detox and fasting?', 'Yes — as educational coaching inside mentoring and seasonal cleanses: gut restoration, agni, tea remedies and, when screened, cleanse or fasting support. This is not a medical detox. Anyone pregnant, on medication, managing illness or with an eating-disorder history should speak with a clinician first. Fasting is never mandatory.'],
     ['How do I book?', 'WhatsApp is the most direct path. You may also use the inquiry form or email. You do not need to know the exact offering.'],
   ];
   return (

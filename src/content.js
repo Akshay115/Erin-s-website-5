@@ -45,7 +45,7 @@ export const elements = [
     name: 'Fire',
     role: 'The calling',
     line: 'Passion, confidence and life energy.',
-    copy: 'Agni. The belly. The solar plexus. The lamp that wants to stay lit.',
+    copy: 'Agni. Passion, confidence, spiritual dharma — the calling in the belly.',
   },
   {
     id: 'air',
@@ -67,8 +67,8 @@ export const bellyEssay = {
   lead: 'The gut is the foundation of our health and energy.',
   body: [
     'It is where nutrients are absorbed, the immune system is cultivated, where hormones are regulated, and where the nervous system whispers its first language. In yoga, it is also the home of the solar plexus — the third chakra, the core fire, the seat of our energy, power and confidence. When the belly is alive, we thrive.',
-    'The belly is more than digestion. It is a portal to your magic, your power, your confidence and your sexual nature. A clear gut means a clear core. A clear core means an embodied life. This is the inner fire we tend.',
-    'The body knows how to heal itself. When we stop fighting it and begin working with nature — herbs and plants, clean food, clean water, rest, breath, movement, sun, the rhythms of the moon — its intelligence emerges. We begin by removing what does not belong and adding more of what makes us feel alive. Once the pathways clear, absorption returns. Energy returns. The fire in the belly relights, and with it the magic, power and confidence that were never lost, only buried.',
+    'The belly is more than digestion. It is a portal to your magic, your power, your confidence and your sexual nature. Heal digestive fire. Activate inner fire. A clear gut means a clear core — and a life that can feel sexy and alive again.',
+    'The body knows how to heal itself. When we stop fighting it and begin working with nature — herbs and plants, clean food, clean water, rest, breath, movement, dance, sun, the rhythms of the moon — its intelligence emerges. We cleanse. We lighten the load. We clear the pathways. Once what does not belong can move, absorption returns. Energy returns. The fire in the belly relights.',
   ],
 };
 
@@ -117,20 +117,22 @@ export const offerings = [
     status: 'Application open',
     image: images.portrait,
     intro:
-      'A sustained container weaving holistic health coaching, lifestyle guidance, movement, breath, nourishment and the slow work of relighting digestive fire.',
+      'A deep container of holistic coaching, intuitive scans, energy readings, gut restoration and the slow work of cleansing — so vitality can return at the cellular level of daily life.',
     story:
-      'Mentoring creates the time required to move beyond inspiration and into lived change. Weekly sessions hold the larger arc — including restoring agni, clearing what the body is carrying, and rebuilding daily rhythm — while simple practices meet the reality of work, relationships and changing seasons. The pace is collaborative rather than prescriptive.',
+      'Mentoring is where Inner Fire Alchemy is practiced over months. We restore and activate agni, the digestive fire. We look at what the body is carrying. We work with clean eating, herbal remedies, and — when it is appropriate and screened — educational support around detoxing and fasting. Weekly sessions hold the larger arc: movement, breath, nervous system, mindset, and the feminine/masculine balance that lets a woman feel at home in her power. The pace is collaborative. The aim is lasting change, not a weekend high.',
     includes: [
       'Twelve weekly private sessions',
-      'Personal educational and practice plan',
-      'Movement, breath and meditation resources',
-      'Nourishment and lifestyle reflection',
+      'Intuitive health scans and energy readings',
+      'Gut restoration and agni education',
+      'Cleanse and fasting education when appropriate',
+      'Tea remedies and herbal guidance',
+      'Movement, dance, breath and meditation resources',
       'Boundaried WhatsApp support between sessions',
       'Closing integration plan',
     ],
-    forYou: 'You are ready to practice consistently, value accountability and want individual support over several months.',
+    forYou: 'You are ready to practice consistently, value accountability and want a real dive into cleansing, gut health and embodied daily ritual.',
     safety:
-      'An intake establishes scope and screens for needs better served by a doctor, dietitian or mental-health professional. Mentoring never promises symptom reversal or clinical outcomes.',
+      'An intake establishes scope and screens for needs better served by a doctor, dietitian or mental-health professional. Mentoring is educational coaching. It does not diagnose, treat or promise to reverse disease.',
     cta: 'Apply for mentorship',
   },
   {
@@ -149,16 +151,17 @@ export const offerings = [
     image: images.path,
     featured: true,
     intro:
-      'The Wise Woman season: an intimate autumn circle for reflection, gentle nourishment, letting go and a return to your fire.',
+      'The Wise Woman season: a seasonal cleanse for women — weekly protocols, tea remedies, sisterhood and a return to your fire.',
     story:
-      'Opening around the November new moon, the Sacred Fall Reset is the live autumn expression of Airin’s seasonal work. Weekly Zoom gatherings, chakra-aligned meditations, Vedic-inspired teachings, tea and simple daily ritual. Reset means attentive routine support, not punishment or deprivation. A small circle of women, devoted together for the season.',
+      'Opening around the November new moon, the Sacred Fall Reset is the live autumn expression of Airin’s seasonal work. Weekly Zoom gatherings, self-reflection, chakra-aligned meditations, energy work, Vedic-inspired teachings, nutrition guidelines, tea remedies, sacred ritual and movement. Weekly detox protocols are educational and body-tailored — not a punishment cleanse. A small circle of women, devoted together for the season.',
     includes: [
       'Four live Zoom circles',
       'New moon opening practice',
+      'Weekly educational detox protocols',
+      'Nutrition guidelines and tea remedies',
       'Chakra-aligned guided meditations',
       'Vedic-inspired seasonal teachings',
-      'Tea and nourishment education',
-      'Daily reflection and movement invitations',
+      'Sacred ritual and movement',
       'Closing integration circle',
     ],
     forYou:
@@ -183,14 +186,15 @@ export const offerings = [
     image: images.path,
     intro: 'Sacred Spring Awakening: lighter rhythms, emerging energy and the courage to begin again.',
     story:
-      'Spring is approached as an invitation to notice what wants to emerge. Weekly circles explore supportive routines, plant-rich nourishment, movement, hydration, reflection and small beginnings without turning the season into a restrictive cleanse.',
+      'Sacred Spring Awakening. Weekly circles explore lighter rhythms, plant-rich nourishment, movement, hydration, tea remedies and small beginnings. A spring protocol is offered as education — never as a forced fast.',
     includes: [
       'Weekly live circle',
-      'Spring movement and meditation',
+      'Spring movement, dance and meditation',
       'Hydration and nourishment education',
-      'Herbal-infusion guidance',
+      'Tea remedies and herbal-infusion guidance',
+      'Educational seasonal protocol',
       'Daily renewal prompts',
-      'Seasonal community space',
+      'Seasonal sisterhood space',
     ],
     forYou: 'You want to renew your routines with companionship and realistic structure.',
     safety: 'The program makes no liver, gallbladder or detoxification claims. Restrictive diets and fasting are not required.',
@@ -324,13 +328,14 @@ export const offerings = [
     price: '$35 single · $300 for 8',
     status: 'Monthly · dates to confirm',
     image: images.moon,
-    intro: 'A recurring rhythm of guided meditation, new-moon intention and full-moon reflection.',
+    intro: 'A monthly women’s gathering: meditation, sisterhood, feminine wisdom, journaling and inner rhythm.',
     story:
-      'The circle meets live on Zoom around the new and full moons. No previous meditation experience is needed. Each gathering offers a simple threshold between the pace of ordinary life and a quieter inner rhythm.',
+      'The circle meets live on Zoom around the new and full moons. Guided meditation, reflection, women’s health education, feminine wisdom, intention setting and a supportive community. No previous meditation experience is needed.',
     includes: [
       'New-moon intention practice',
       'Full-moon reflection practice',
       'Live guided meditation',
+      'Women’s health and feminine-wisdom teaching',
       'Journaling prompts',
       'Optional circle sharing',
       'Eight-session path available',
@@ -342,7 +347,7 @@ export const offerings = [
   {
     slug: 'yoga-meditation-barre',
     number: '10',
-    title: 'Yoga, Meditation & Barre',
+    title: 'Yoga, Dance, Meditation & Barre',
     category: 'Movement',
     door: 'private',
     element: 'air',
@@ -352,16 +357,16 @@ export const offerings = [
     price: 'From $75 USD',
     status: 'Year-round',
     image: images.portrait,
-    intro: 'Live movement, meditation, breathwork and special workshops for private clients and groups.',
+    intro: 'Live yoga, dance, barre, meditation, breathwork and special workshops — in Goa, online, or as a private class.',
     story:
-      'Each session is designed around the experience, energy and needs of the people present. Yoga and barre build different qualities; meditation and breath create the space to feel them.',
+      'The body was made to move. Yoga and barre build different qualities; dance returns pleasure and rhythm; meditation and breath create the space to feel them. Each session is designed around the people in the room.',
     includes: [
       'Movement check-in',
-      'Yoga or barre sequence',
+      'Yoga, dance or barre sequence',
       'Optional breathwork',
       'Guided meditation',
       'Cool-down and integration',
-      'Private and group formats',
+      'Private, group and workshop formats',
     ],
     forYou: 'You want a stand-alone class, a private practice or a movement experience for your group.',
     safety:
@@ -442,9 +447,9 @@ export const offerings = [
     image: images.portrait,
     coming: true,
     intro:
-      'A signature journey through feminine embodiment, confidence, movement, nourishment and self-connection.',
+      'A 10-week journey into feminine embodiment, sacred sexuality, vitality, confidence, movement, mindset, nervous system, nourishment and living from deep self-connection.',
     story:
-      'Embodied Woman is an invitational group process for women who want to inhabit their lives with greater presence. It explores movement, mindset, nourishment and feminine expression without positioning the group as trauma therapy.',
+      'Embodied Woman is Airin’s coming signature program: a transformational container for cultivating Divine Feminine and balancing masculine and feminine energies. It explores movement, dance, mindset, nourishment and expression. It is invitational group process — not sexuality therapy or trauma treatment.',
     includes: [
       'Ten weekly group sessions',
       'Consent-based movement',
@@ -525,7 +530,7 @@ export const retreats = [
   },
   {
     slug: 'anahata-monthly',
-    title: 'Anahata Wellness & Movement Retreat',
+    title: 'Anahata Wellness, Detox & Movement Retreat',
     date: 'Monthly · next date to confirm',
     duration: 'Weekend format proposed',
     price: 'Proposed from $295 USD',
@@ -533,14 +538,14 @@ export const retreats = [
     image: images.path,
     audience: 'Open to everyone',
     description:
-      'An intimate Goa weekend centered on conscious movement, nourishment, meditation, reflection and rest.',
+      'An intimate Goa weekend of conscious movement, dance, nourishing food, meditation and an educational detox rhythm — held at Anahata.',
     includes: [
-      'Yoga or conscious movement',
+      'Yoga, dance or conscious movement',
       'Meditation and reflection',
       'Nourishing meals',
+      'Educational detox and tea guidance',
       'Nature time',
-      'Optional workshop',
-      'Sound or bodywork when listed',
+      'Optional workshop, sound or bodywork when listed',
     ],
     safety:
       'Each date will publish its exact day or residential format, venue, accessibility, food, bodywork consent and emergency arrangements.',
@@ -587,20 +592,124 @@ export const articles = [
       'Persistent pain, bleeding, vomiting, unexplained weight change or other concerning symptoms need medical attention. Curiosity can support a kinder relationship with food, but it should never delay qualified care.',
     ],
   },
+  {
+    slug: 'agni-and-the-gut',
+    category: 'Gut health',
+    botanical: 'tulsi',
+    title: 'Agni: Why the Belly Is the Inner Fire',
+    intro: 'In yoga the solar plexus is the seat of power. In daily life it is also where we digest food, feeling and choice.',
+    image: images.ritual,
+    paragraphs: [
+      'Airin calls this Inner Fire Alchemy for a reason. When digestion is heavy, energy drops, mood swings, skin flares and confidence often follow. Her own path — a long cleanse after years of bloating, eczema and fog — is why the work begins in the gut.',
+      'Practically, tending agni can look like regular meals, warm food when the body asks for it, herbs and teas as education, less of what inflames you, and enough rest for the nervous system to stop gripping the belly. A seasonal cleanse is one way in. It is not the only way, and it is never a contest.',
+      'This is not a diagnosis of parasites, deficiency or disease. Persistent or severe symptoms belong with a clinician. Coaching can sit beside that care; it cannot replace it.',
+    ],
+  },
+  {
+    slug: 'tea-remedies',
+    category: 'Herbal tea',
+    botanical: 'lotus',
+    title: 'Tea as Daily Medicine — Without the Myth',
+    intro: 'A cup can be ritual and plant education. It is not a cure in a mug.',
+    image: images.ritual,
+    paragraphs: [
+      'Seasonal circles and mentoring include tea remedies: simple infusions that match the time of year — lighter and bitter in spring, cooling in summer, grounding in autumn, warming in winter. The point is rhythm and attention, not a secret formula.',
+      'Ingredients, serving size and who should avoid a plant matter. Pregnancy, medication and allergies change the picture. Airin discloses what she offers and will not push a herb that has not been screened for you.',
+      'If a tea is part of your protocol, treat it as food-level support. Anything stronger belongs in a conversation with a qualified practitioner.',
+    ],
+  },
+  {
+    slug: 'breath-and-nervous-system',
+    category: 'Breath & nervous system',
+    botanical: 'coconut',
+    title: 'Breath Is How the Nervous System Speaks',
+    intro: 'Regulation is not a personality trait. It is a practice you can modify or stop.',
+    image: images.portrait,
+    paragraphs: [
+      'Cleansing the body without soothing the nervous system is how people burn out on wellness. Breath, rest, and simple orientation to the room are part of every container Airin holds — yoga, moon circle, mentoring, cacao evenings.',
+      'A useful breath is unforced. If you feel dizzy, tingling or panicked, stop. Keep your eyes open. Sit instead of lying down. Nothing in this work requires you to “go deeper” than feels safe.',
+      'Meditation and breath are not crisis care. If you are in acute distress, contact local emergency or mental-health services.',
+    ],
+  },
+  {
+    slug: 'divine-feminine',
+    category: 'Women’s health',
+    botanical: 'hibiscus',
+    title: 'Divine Feminine, Without the Performance',
+    intro: 'With women, Airin works toward more Divine Feminine — and a kinder balance with the masculine.',
+    image: images.portrait,
+    paragraphs: [
+      'The Doc is plain: help women reconnect with their bodies, restore vitality, and feel sexy and alive again. That is not a costume. It is digestion, cycle literacy, rest, movement, pleasure, and the confidence that returns when the belly is no longer a battlefield.',
+      'Masculine energy here means structure, follow-through, the container. Feminine means feeling, creativity, cyclical time. Most of us are asked to live in only one. Seasonal circles, moon gatherings and Embodied Woman are places to practice both.',
+      'Private work remains open to everyone. The women-only rooms are named as such so no one has to guess.',
+    ],
+  },
+  {
+    slug: 'mindset-and-manifestation',
+    category: 'Mindset',
+    botanical: 'frangipani',
+    title: 'Mindset Is a Daily Ritual, Not a Spell',
+    intro: 'Manifestation, in this practice, is what happens when the body is resourced enough to follow a true yes.',
+    image: images.moon,
+    paragraphs: [
+      'When the gut is overloaded and the nervous system is braced, “think positive” is another demand. Airin’s work flips the order: nourish, cleanse what you can, move, sleep — then notice what you actually want.',
+      'Journaling, new-moon intention and full-moon release are tools for that noticing. They do not replace money, medicine or boundaries. They do give a place to hear yourself.',
+      'If mindset work ever feels like self-blame, put the notebook down. The sanctuary is not another performance.',
+    ],
+  },
+  {
+    slug: 'sacred-daily-ritual',
+    category: 'Ritual',
+    botanical: 'lotus',
+    title: 'Sacred Living Is Made of Ordinary Hours',
+    intro: 'Akasha, in the five elements, is ritual, presence and intuition — usually smaller than we think.',
+    image: images.moon,
+    paragraphs: [
+      'A candle, a cup of tea, five minutes of breath, a walk at dusk, dancing in the kitchen: these are the sacred daily rituals the brand is built on. They work because they repeat, not because they are dramatic.',
+      'Seasonal cleanses and moon circles simply give those hours a shared clock. You can keep a ritual after the Zoom ends. You can also change it.',
+      'Ritual is not a religion test. Bring your own faith, or none. The invitation is attention.',
+    ],
+  },
+  {
+    slug: 'dance-as-medicine',
+    category: 'Dance & movement',
+    botanical: 'banana',
+    title: 'Dance Is Part of the Medicine',
+    intro: 'She is a lover of dance and the ocean. Movement in this work is not only asana.',
+    image: images.coast,
+    paragraphs: [
+      'Yoga, barre and conscious dance all appear in classes, retreats and the summer Wild Woman circle. Dance returns rhythm, pleasure and the simple fact of being in a body that can take up space.',
+      'No performance standard. You can sway, sit, or mark the rhythm with a hand. Injury and pregnancy change the shape; they do not exclude you from the room.',
+      'If you want movement without a cleanse, start with a private yoga or dance session, or ask for the next Anahata weekend.',
+    ],
+  },
+  {
+    slug: 'yoga-as-homecoming',
+    category: 'Yoga',
+    botanical: 'areca',
+    title: 'Yoga as the Path That Brought Her Home',
+    intro: 'The mat was never a brand. It was how a young woman in Hawaii began to heal childhood wounding.',
+    image: images.portrait,
+    paragraphs: [
+      'Twenty years of practice, fifteen years teaching, lineages in Bali, Kundalini Tantra, and the quiet of daily class: yoga in this house is a moving prayer, not a workout badge.',
+      'Private Kundalini Tantra sessions, group classes, retreats and the breath inside a cleanse all come from that same love. Strength and softness are both allowed.',
+      'Forceful breath and long retention are never assumed. Tell Airin what your body is carrying before you begin.',
+    ],
+  },
 ];
 
 export const doors = [
   {
     id: 'private',
     title: 'Private work',
-    line: 'A single reading, or months of mentoring.',
+    line: 'Scans, mentoring, cleanse education, yoga and dance.',
     to: '/offerings?door=private',
     emblem: 'lamp',
   },
   {
     id: 'circle',
     title: 'Women’s circles',
-    line: 'Seasons, moons, sisterhood.',
+    line: 'Seasons, moons, Divine Feminine, sisterhood.',
     to: '/seasons',
     emblem: 'wheel',
   },
@@ -652,14 +761,15 @@ export const aboutChapters = [
     botanical: 'coconut',
     kicker: 'Today',
     title: 'The work now has an address.',
-    body: 'Nearly two decades of practice now live in private coaching, movement, meditation, women’s circles and retreats from Mandrem — and online worldwide. Yoga, breath and guided meditation remain part of every container, because healing is never only physical. The nervous system and the energy field are essential to the work. She still loves dance. She still loves the ocean.',
+    body: 'Nearly two decades of practice now live in private coaching, movement, dance, meditation, women’s circles and retreats from Mandrem — and online worldwide. With women, the work also cultivates Divine Feminine and a healthier balance of masculine and feminine energies. Yoga, breath and guided meditation remain part of every container, because healing is never only physical. She still loves dance. She still loves the ocean.',
   },
 ];
 
 export const credentials = [
   'Certified Holistic Health Coach',
   'Tantric Yoga Teacher',
-  'Meditation & embodiment guide',
+  'Meditation / Mystic Guide',
+  'Women’s Wellness Mentor',
   'Further study in gut health',
   'Training in energy and chakra healing',
   'Massage training in Hawaii',

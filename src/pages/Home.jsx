@@ -40,7 +40,7 @@ export default function Home() {
             <br />
             <em>within</em>
           </h1>
-          <p>Naturally heal the fire in the belly. Return to the magic and power that have always been you.</p>
+          <p>Heal digestive fire. Activate inner fire. Feel sexy and alive again — through movement, nourishment, cleansing, breath and sacred daily ritual.</p>
           <div className="hero-actions">
             <Button href="#doors" tone="pale">
               Enter the work <IconArrow />
@@ -151,7 +151,7 @@ export default function Home() {
               <br />
               <em>Fall Reset</em>
             </h2>
-            <p>Return to your fire — confident, sensual, and rooted in your body. A small circle of women, opening on the November new moon.</p>
+            <p>A seasonal cleanse for women: weekly protocols, tea remedies, Vedic teaching and sisterhood. Return to your fire — confident, sensual, rooted.</p>
             <Button to="/offerings/sacred-fall-reset" tone="pale">
               Read the invitation <IconArrow />
             </Button>
@@ -163,8 +163,8 @@ export default function Home() {
         <div className="portrait-image film" style={{ '--bg': `url(${images.portrait})` }} />
         <div className="portrait-copy">
           <Eyebrow>The woman behind the work</Eyebrow>
-          <blockquote>“The body is not a problem to solve. It is a place to return to.”</blockquote>
-          <p>From the Hawaiian coast to study across Bali, Thailand and India, Airin’s path now has an address in Mandrem — and a practice that still begins in the belly.</p>
+          <blockquote>“When you create a sanctuary within, everything you are seeking finds you.”</blockquote>
+          <p>Health coach, tantric yoga teacher, mystic guide and women’s wellness mentor. Hawaii to Mandrem — a practice that still begins in the belly, and still loves to dance.</p>
           <ArrowLink to="/about">Read her story</ArrowLink>
         </div>
       </section>

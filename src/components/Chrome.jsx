@@ -341,7 +341,7 @@ export function Footer() {
           <Link to="/offerings">Offerings</Link>
           <Link to="/seasons">Seasons</Link>
           <Link to="/retreats">Retreats</Link>
-          <Link to="/journal">Field notes</Link>
+          <Link to="/journal">Wisdom</Link>
         </div>
         <div>
           <b>Connect</b>
