@@ -242,7 +242,6 @@ export function Offerings() {
 
 function ChapterExtra({ slug }) {
   const phase = useMemo(() => moonPhase(), []);
-  const name = useMemo(() => moonName(), []);
   const extras = {
     'intuitive-session': {
       kicker: 'One reading · not a diagnosis',
@@ -302,7 +301,7 @@ function ChapterExtra({ slug }) {
       <div className="chapter-extra moon-extra">
         <LiveMoon phase={phase} />
         <div>
-          <p className="extra-kicker">{name} · 30–45 minutes</p>
+          <p className="extra-kicker">30–45 minutes</p>
           <p>
             <b>$35</b> single · <b>$300</b> for eight sessions.
           </p>

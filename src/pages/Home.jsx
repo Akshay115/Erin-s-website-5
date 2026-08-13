@@ -13,12 +13,11 @@ import {
   arts,
 } from '../illustrations';
 import { articles, bellyEssay, doors, elements, images, offerings, sharedSafety } from '../content';
-import { moonPhase, moonName } from '../lib/moon';
+import { moonPhase } from '../lib/moon';
 
 export default function Home() {
   const [active, setActive] = useState('fire');
   const [phase] = useState(() => moonPhase());
-  const [name] = useState(() => moonName());
   const fall = offerings.find((o) => o.slug === 'sacred-fall-reset');
 
   useEffect(() => {
@@ -61,9 +60,8 @@ export default function Home() {
 
       <section className="belly section-pad" id="belly">
         <div className="belly-art reveal">
-          <img src={arts.agni} alt="Ink drawing of a laterite coast with a gold sun on the horizon — the digestive fire." loading="lazy" width="720" height="960" />
+          <img src={arts.agni} alt="" loading="lazy" width="720" height="960" />
           <BodyLandscape />
-          <span className="belly-caption">Agni — the digestive fire, the solar plexus. The body drawn as a coastline.</span>
         </div>
         <div className="belly-copy">
           <Eyebrow>Inner Fire Alchemy</Eyebrow>
@@ -142,7 +140,6 @@ export default function Home() {
         <section className="featured-fall" id="fall">
           <div className="fall-moon">
             <LiveMoon phase={phase} />
-            <small>{name}</small>
           </div>
           <div className="fall-copy">
             <Eyebrow>Now open · Women only · November new moon</Eyebrow>
