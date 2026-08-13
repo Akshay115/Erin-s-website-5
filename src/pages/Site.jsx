@@ -41,7 +41,7 @@ export function About() {
   return (
     <Frame title="Her story" description="Meet Airin Aquarius, holistic health coach, yoga teacher and embodiment guide based in Mandrem, Goa." element="earth">
       <section className="about-hero">
-        <div className="about-col film" style={{ '--bg': `url(${images.coast})` }} />
+        <div className="about-col film" style={{ '--bg': `url(${images.portrait})` }} />
         <div className="about-intro">
           <Eyebrow>The woman behind the work</Eyebrow>
           <h1>
@@ -66,7 +66,7 @@ export function About() {
           </div>
         </section>
       ))}
-      <section className="quote-image film" style={{ '--bg': `url(${images.portrait})` }}>
+      <section className="quote-image film" style={{ '--bg': `url(${images.coast})` }}>
         <blockquote>“I began to understand the belly not only as digestion, but as confidence, vitality and the center from which we meet life.”</blockquote>
       </section>
       <section className="editorial section-pad">
@@ -97,7 +97,7 @@ export function Approach() {
   const [active, setActive] = useState('fire');
   return (
     <Frame title="Inner Fire Alchemy" description="A whole-person practice shaped by five elements and grounded in daily life." element={active}>
-      <PageHero eyebrow="The approach" title="Inner Alchemy.<br/><em>Sacred living.</em>" text="Movement, nourishment, cleansing, meditation, breath, nervous system and intentional living — ancient wisdom beside modern holistic health." image={images.ritual} />
+      <PageHero eyebrow="The approach" title="Inner Alchemy.<br/><em>Sacred living.</em>" text="Movement, nourishment, cleansing, meditation, breath, nervous system and intentional living — ancient wisdom beside modern holistic health." image={images.herbs} />
       <section className="manifesto section-pad">
         <Eyebrow>Inner Fire Alchemy</Eyebrow>
         <div className="manifesto-grid">
@@ -164,7 +164,7 @@ const plantFor = {
 function Card({ item }) {
   return (
     <Link className="offering-card reveal" to={`/offerings/${item.slug}`}>
-      <div className="card-mark">
+      <div className="card-mark" style={{ '--bg': `url(${item.image})` }}>
         <OfferingMark slug={item.slug} />
         <Botanical name={plantFor[item.element] || 'lotus'} className="card-botanical" />
         <span>{item.number}</span>
@@ -209,7 +209,7 @@ export function Offerings() {
   };
   return (
     <Frame title="Offerings" description="Private guidance, women’s circles and immersive experiences in Goa and online." element="earth">
-      <PageHero eyebrow="Work with Airin" title="Many paths.<br/><em>One return.</em>" text="Private guidance, shared practice and immersive experiences, in Mandrem and online worldwide." image={images.path} />
+      <PageHero eyebrow="Work with Airin" title="Many paths.<br/><em>One return.</em>" text="Private guidance, shared practice and immersive experiences, in Mandrem and online worldwide." image={images.jungle} />
       <section className="catalog section-pad">
         <div className="filterbar" role="group" aria-label="Filter offerings">
           {[
@@ -402,14 +402,7 @@ export function Seasons() {
   const rotation = { spring: 0, summer: 90, autumn: 180, winter: 270 }[active];
   return (
     <Frame title="Seasonal circles" description="Four women-only seasonal resets — Maiden, Wild Woman, Wise Woman, Mystic." element="earth">
-      <section className="simple-hero">
-        <Eyebrow>Women only · Live online</Eyebrow>
-        <h1>
-          A year,
-          <br />
-          <em>in four fires.</em>
-        </h1>
-      </section>
+      <PageHero eyebrow="Women only · Live online" title="A year,<br/><em>in four fires.</em>" text="Maiden, Wild Woman, Wise Woman, Mystic — four seasonal cleanses." image={images.seasonsTable} />
       <section className="wheel-section section-pad">
         <div className="wheel-wrap">
           <img src={arts.wheel} alt="Ink and wash seasonal wheel in four botanical quadrants." className="wheel-art" style={{ transform: `rotate(${rotation}deg)` }} loading="lazy" width="800" height="800" />
@@ -443,7 +436,7 @@ export function MoonPage() {
   const name = useMemo(() => moonName(), []);
   return (
     <Frame title="Sacred Moon Circle" description="Live guided meditations on Zoom around each new and full moon." element="akasha">
-      <section className="moon-hero">
+      <section className="moon-hero" style={{ '--bg': `url(${images.moonSea})` }}>
         <LiveMoon phase={phase} className="moon-large" />
         <div>
           <Eyebrow light>Women only · Live online</Eyebrow>
@@ -487,7 +480,7 @@ export function Retreats() {
   const main = retreats[0];
   return (
     <Frame title="Retreats" description="Retreats in Goa where movement, nourishment, nature and meaningful rest meet." element="water">
-      <PageHero eyebrow="Immersive practice" title="Leave the noise.<br/><em>Keep what matters.</em>" text="Retreats in Mandrem where movement, nourishment, nature and meaningful rest meet." image={images.coast} />
+      <PageHero eyebrow="Immersive practice" title="Leave the noise.<br/><em>Keep what matters.</em>" text="Retreats in Mandrem where movement, nourishment, nature and meaningful rest meet." image={images.retreat} />
       <section className="retreat-intro section-pad">
         <Eyebrow>Upcoming · Proposed</Eyebrow>
         <div>
@@ -504,7 +497,7 @@ export function Retreats() {
         </div>
       </section>
       <section className="retreat-days">
-        <div className="retreat-image film" style={{ '--bg': `url(${images.path})` }} />
+        <div className="retreat-image film" style={{ '--bg': `url(${images.retreat})` }} />
         <div className="day-list">
           <Eyebrow light>A rhythm, not a schedule</Eyebrow>
           {main.rhythm.map((x, i) => (
@@ -531,15 +524,18 @@ export function Retreats() {
           <p>{main.safety}</p>
         </div>
       </section>
-      <section className="monthly section-pad dark">
-        <Eyebrow light>Monthly at Anahata</Eyebrow>
-        <h2>
-          Wellness, detox
-          <br />
-          <em>& movement.</em>
-        </h2>
-        <p>Intimate Goa weekends of conscious movement, dance, nourishing food, meditation and an educational detox rhythm. Next date and format to be confirmed.</p>
-        <ArrowLink to="/contact?offering=anahata-monthly">Ask for the next date</ArrowLink>
+      <section className="monthly-band">
+        <div className="monthly-photo film" style={{ '--bg': `url(${images.shala})` }} />
+        <div className="monthly">
+          <Eyebrow light>Monthly at Anahata</Eyebrow>
+          <h2>
+            Wellness, detox
+            <br />
+            <em>& movement.</em>
+          </h2>
+          <p>Intimate Goa weekends of conscious movement, dance, nourishing food, meditation and an educational detox rhythm. Next date and format to be confirmed.</p>
+          <ArrowLink to="/contact?offering=anahata-monthly">Ask for the next date</ArrowLink>
+        </div>
       </section>
     </Frame>
   );
@@ -554,13 +550,24 @@ export function Goa() {
   const embed = `https://maps.google.com/maps?q=${contact.lat},${contact.lng}&z=16&output=embed`;
   return (
     <Frame title="Visit Mandrem" description="Find Airin Aquarius in Mandrem, North Goa — Casa Christavo, Junos Wado." element="earth">
-      <section className="simple-hero">
-        <Eyebrow>The place</Eyebrow>
-        <h1>
-          I am here.
-          <br />
-          <em>Come as you are.</em>
-        </h1>
+      <section className="page-hero film" style={{ '--bg': `url(${images.goaBeach})` }}>
+        <div className="hero-shade" />
+        <div className="page-hero-copy">
+          <Eyebrow light>The place</Eyebrow>
+          <h1>
+            I am here.
+            <br />
+            <em>Come as you are.</em>
+          </h1>
+        </div>
+      </section>
+      <section className="goa-photos">
+        <div className="film" style={{ '--bg': `url(${images.retreat})` }} />
+        <div className="film" style={{ '--bg': `url(${images.shala})` }} />
+        <div className="film" style={{ '--bg': `url(${images.jungle})` }} />
+        <div className="film" style={{ '--bg': `url(${images.cacao})` }} />
+        <div className="film" style={{ '--bg': `url(${images.mentoringRoom})` }} />
+        <div className="film" style={{ '--bg': `url(${images.harvest})` }} />
       </section>
       <section className="goa-grid section-pad">
         <div>
@@ -590,10 +597,11 @@ export function Goa() {
 export function Journal() {
   return (
     <Frame title="Field notes" description="Reflections on nourishment, movement, ritual and the seasons." element="air">
-      <PageHero eyebrow="Wisdom" title="Inspiration and<br/><em>education.</em>" text="Women’s health, gut and agni, herbal tea, mindset, meditation, yoga, dance, breath, nervous system, ritual, seasonal living and nourishment." image={images.moon} />
+      <PageHero eyebrow="Wisdom" title="Inspiration and<br/><em>education.</em>" text="Women’s health, gut and agni, herbal tea, mindset, meditation, yoga, dance, breath, nervous system, ritual, seasonal living and nourishment." image={images.journalDesk} />
       <section className="notes section-pad">
         {articles.map((a, i) => (
           <Link className="note-card reveal" to={`/journal/${a.slug}`} key={a.slug}>
+            <div className="note-photo" style={{ '--bg': `url(${a.image})` }} />
             <Botanical name={a.botanical} />
             <span>
               0{i + 1} · {a.category}
@@ -703,7 +711,7 @@ export function Contact() {
   return (
     <Frame title="Begin a conversation" element="fire">
       <section className="contact-hero">
-        <div className="contact-copy">
+        <div className="contact-copy" style={{ '--bg': `url(${images.goaBeach})` }}>
           <Eyebrow light>Begin here</Eyebrow>
           <h1>
             Tell us what

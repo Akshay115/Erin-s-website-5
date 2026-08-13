@@ -143,12 +143,12 @@ export default function Home() {
       </section>
 
       {fall && (
-        <section className="featured-fall" id="fall">
+        <section className="featured-fall" id="fall" style={{ '--bg': `url(${images.harvest})` }}>
           <div className="fall-moon">
             <LiveMoon phase={phase} />
           </div>
           <div className="fall-copy">
-            <Eyebrow>Now open · Women only · November new moon</Eyebrow>
+            <Eyebrow light>Now open · Women only · November new moon</Eyebrow>
             <h2>
               Sacred
               <br />
@@ -172,24 +172,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="place-strip section-pad">
-        <Eyebrow>The place</Eyebrow>
-        <h2>
-          Casa Christavo,
-          <br />
-          <em>Junos Wado, Mandrem.</em>
-        </h2>
-        <p>Sessions from 07:00 IST. Monthly gatherings at Anahata. Private work online worldwide.</p>
-        <ArrowLink to="/goa">Visit Goa</ArrowLink>
+      <section className="place-band">
+        <div className="place-photo" style={{ '--bg': `url(${images.goaBeach})` }} />
+        <div className="place-copy">
+          <Eyebrow>The place</Eyebrow>
+          <h2>
+            Casa Christavo,
+            <br />
+            <em>Junos Wado, Mandrem.</em>
+          </h2>
+          <p>Sessions from 07:00 IST. Monthly gatherings at Anahata. Private work online worldwide.</p>
+          <ArrowLink to="/goa">Visit Goa</ArrowLink>
+        </div>
       </section>
 
       {articles[0] && (
-        <section className="home-note section-pad">
-          <Botanical name={articles[0].botanical} />
-          <Eyebrow>A field note</Eyebrow>
-          <h2>{articles[0].title}</h2>
-          <p>{articles[0].intro}</p>
-          <ArrowLink to={`/journal/${articles[0].slug}`}>Read the note</ArrowLink>
+        <section className="home-note-band">
+          <div className="home-note-photo film" style={{ '--bg': `url(${articles[0].image})` }} />
+          <div className="home-note">
+            <Botanical name={articles[0].botanical} />
+            <Eyebrow>A field note</Eyebrow>
+            <h2>{articles[0].title}</h2>
+            <p>{articles[0].intro}</p>
+            <ArrowLink to={`/journal/${articles[0].slug}`}>Read the note</ArrowLink>
+          </div>
         </section>
       )}
 

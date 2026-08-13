@@ -6,6 +6,18 @@ export const images = {
   ritual: '/images/ritual.jpg',
   moon: '/images/moon.jpg',
   path: '/images/pathway.jpg',
+  goaBeach: '/photos/goa-beach.jpg',
+  retreat: '/photos/retreat-pavilion.jpg',
+  cacao: '/photos/cacao.jpg',
+  mentoringRoom: '/photos/mentoring-room.jpg',
+  seasonsTable: '/photos/seasons-table.jpg',
+  moonNight: '/photos/moon-night.jpg',
+  journalDesk: '/photos/journal-desk.jpg',
+  shala: '/photos/yoga-shala.jpg',
+  jungle: '/photos/jungle-path.jpg',
+  moonSea: '/photos/moon-sea.jpg',
+  harvest: '/photos/harvest.jpg',
+  herbs: '/photos/herbs-tea.jpg',
 };
 
 export const contact = {
@@ -85,7 +97,7 @@ export const offerings = [
     duration: '75 minutes',
     price: '$175 USD',
     status: 'Available by inquiry',
-    image: images.ritual,
+    image: images.herbs,
     intro:
       'A focused reading of your body, energy field and present habits — then a grounded pathway toward a clearer core and a livelier fire.',
     story:
@@ -115,7 +127,7 @@ export const offerings = [
     duration: '12 weeks',
     price: '$1,800 USD',
     status: 'Application open',
-    image: images.portrait,
+    image: images.mentoringRoom,
     intro:
       'A deep container of holistic coaching, intuitive scans, energy readings, gut restoration and the slow work of cleansing — so vitality can return at the cellular level of daily life.',
     story:
@@ -148,8 +160,8 @@ export const offerings = [
     duration: '4 weeks',
     price: '$395 USD',
     status: 'November cohort · dates to confirm',
-    image: images.path,
     featured: true,
+    image: images.harvest,
     intro:
       'The Wise Woman season: a seasonal cleanse for women — weekly protocols, tea remedies, sisterhood and a return to your fire.',
     story:
@@ -183,7 +195,7 @@ export const offerings = [
     duration: '4 weeks',
     price: '$395 USD',
     status: 'Seasonal waitlist',
-    image: images.path,
+    image: images.seasonsTable,
     intro: 'Sacred Spring Awakening: lighter rhythms, emerging energy and the courage to begin again.',
     story:
       'Sacred Spring Awakening. Weekly circles explore lighter rhythms, plant-rich nourishment, movement, hydration, tea remedies and small beginnings. A spring protocol is offered as education — never as a forced fast.',
@@ -213,7 +225,7 @@ export const offerings = [
     duration: '4 weeks',
     price: '$395 USD',
     status: 'Seasonal waitlist',
-    image: images.coast,
+    image: images.goaBeach,
     intro: 'Sacred Summer Radiance: creative movement, cooling rhythms and embodied confidence.',
     story:
       'The summer circle turns toward expression and aliveness. Practices explore movement, sensual presence, cooling nourishment, journaling and the solar-plexus symbolism of agency and confidence.',
@@ -243,7 +255,7 @@ export const offerings = [
     duration: '4 weeks',
     price: '$395 USD',
     status: 'Seasonal waitlist',
-    image: images.moon,
+    image: images.moonSea,
     intro: 'Deep Restoration Sanctuary: warmth, inward reflection and permission to move more slowly.',
     story:
       'Winter offers another kind of intelligence. This lower-intensity circle centers rest, warm nourishment, contemplative practice, sleep-supportive routines and the value of an unhurried inner life.',
@@ -272,7 +284,7 @@ export const offerings = [
     duration: '60 minutes',
     price: 'From $75 USD',
     status: 'Available by inquiry',
-    image: images.coast,
+    image: images.shala,
     intro: 'A private movement practice informed by twenty years of Kundalini and Tantric yoga — a moving prayer for the spine, the breath and the fire in the belly.',
     story:
       'Posture, breath, attention and rest are shaped around the person in the room. The practice can be strong or quiet, but its purpose is always deeper listening rather than performance.',
@@ -300,7 +312,7 @@ export const offerings = [
     duration: '60 minutes',
     price: '$125 USD',
     status: 'Available by inquiry',
-    image: images.ritual,
+    image: images.cacao,
     intro: 'A quiet guided session using breath, rest, attention and Airin’s energy-healing framework.',
     story:
       'Energy healing is held as a contemplative and subjective experience. The session creates room to slow down, notice the subtle body and integrate through grounded reflection.',
@@ -327,7 +339,7 @@ export const offerings = [
     duration: '30–45 minutes',
     price: '$35 single · $300 for 8',
     status: 'Monthly · dates to confirm',
-    image: images.moon,
+    image: images.moonNight,
     intro: 'A monthly women’s gathering: meditation, sisterhood, feminine wisdom, journaling and inner rhythm.',
     story:
       'The circle meets live on Zoom around the new and full moons. Guided meditation, reflection, women’s health education, feminine wisdom, intention setting and a supportive community. No previous meditation experience is needed.',
@@ -356,7 +368,7 @@ export const offerings = [
     duration: '60 minutes',
     price: 'From $75 USD',
     status: 'Year-round',
-    image: images.portrait,
+    image: images.retreat,
     intro: 'Live yoga, dance, barre, meditation, breathwork and special workshops — in Goa, online, or as a private class.',
     story:
       'The body was made to move. Yoga and barre build different qualities; dance returns pleasure and rhythm; meditation and breath create the space to feel them. Each session is designed around the people in the room.',
@@ -385,7 +397,7 @@ export const offerings = [
     duration: 'Approx. 90 minutes',
     price: '$45 USD',
     status: 'Monthly · date to confirm',
-    image: images.ritual,
+    image: images.cacao,
     intro:
       'A heart-centered evening at Anahata — the heart chakra — pairing ceremonial cacao with stillness, guided meditation and connection.',
     story:
@@ -415,7 +427,7 @@ export const offerings = [
     duration: '5 days',
     price: '$79 USD',
     status: 'Early-access list',
-    image: images.path,
+    image: images.jungle,
     coming: true,
     intro: 'Five days, five elements and one approachable daily ritual.',
     story:
@@ -475,7 +487,7 @@ export const offerings = [
     duration: 'Tailored',
     price: 'Custom proposal',
     status: 'By application',
-    image: images.coast,
+    image: images.retreat,
     intro:
       'A private or small-group journey shaped around movement, meditation, nourishing food, bodywork and place.',
     story:
@@ -504,7 +516,7 @@ export const retreats = [
     duration: '5 days · 4 nights',
     price: 'Proposed from $1,650 USD',
     status: 'Interest list · details to confirm',
-    image: images.coast,
+    image: images.retreat,
     audience: 'Open to everyone',
     description:
       'A restorative Goa pause with yoga, meditation, dance, conscious movement, sound, massage, nourishing food, nature and workshops.',
@@ -535,7 +547,7 @@ export const retreats = [
     duration: 'Weekend format proposed',
     price: 'Proposed from $295 USD',
     status: 'Interest list',
-    image: images.path,
+    image: images.shala,
     audience: 'Open to everyone',
     description:
       'An intimate Goa weekend of conscious movement, dance, nourishing food, meditation and an educational detox rhythm — held at Anahata.',
@@ -559,7 +571,7 @@ export const articles = [
     botanical: 'hibiscus',
     title: 'The Quiet Intelligence of Seasonal Living',
     intro: 'Seasonal living does not require a strict diet, a dramatic cleanse or a perfect morning routine. It can begin with attention.',
-    image: images.path,
+    image: images.seasonsTable,
     paragraphs: [
       'Notice the temperature when you step outside, the time daylight fades, the foods naturally available and the amount of movement or rest your body welcomes. Choose one small response to what you notice.',
       'A weekly check-in can make this practical. Ask: What is giving me energy? What is asking for less effort? What routine would make this week feel steadier? Write down one answer and choose one realistic action.',
@@ -585,7 +597,7 @@ export const articles = [
     botanical: 'tulsi',
     title: 'A Gentler Conversation with the Belly',
     intro: 'The belly is often where wellness language becomes harsh. A gentler approach replaces judgment with observation.',
-    image: images.ritual,
+    image: images.herbs,
     paragraphs: [
       'Notice what a meal is like before, during and after eating. Were you hungry? Rushed? Satisfied? A brief note can reveal patterns without turning every sensation into a diagnosis.',
       'Regular meals, adequate hydration, varied foods and enough time to eat are reasonable foundations for many people, but there is no universal plan. Culture, budget, allergies, medication, health conditions and eating-disorder history all matter.',
@@ -598,7 +610,7 @@ export const articles = [
     botanical: 'tulsi',
     title: 'Agni: Why the Belly Is the Inner Fire',
     intro: 'In yoga the solar plexus is the seat of power. In daily life it is also where we digest food, feeling and choice.',
-    image: images.ritual,
+    image: images.herbs,
     paragraphs: [
       'Airin calls this Inner Fire Alchemy for a reason. When digestion is heavy, energy drops, mood swings, skin flares and confidence often follow. Her own path — a long cleanse after years of bloating, eczema and fog — is why the work begins in the gut.',
       'Practically, tending agni can look like regular meals, warm food when the body asks for it, herbs and teas as education, less of what inflames you, and enough rest for the nervous system to stop gripping the belly. A seasonal cleanse is one way in. It is not the only way, and it is never a contest.',
@@ -611,7 +623,7 @@ export const articles = [
     botanical: 'lotus',
     title: 'Tea as Daily Medicine — Without the Myth',
     intro: 'A cup can be ritual and plant education. It is not a cure in a mug.',
-    image: images.ritual,
+    image: images.herbs,
     paragraphs: [
       'Seasonal circles and mentoring include tea remedies: simple infusions that match the time of year — lighter and bitter in spring, cooling in summer, grounding in autumn, warming in winter. The point is rhythm and attention, not a secret formula.',
       'Ingredients, serving size and who should avoid a plant matter. Pregnancy, medication and allergies change the picture. Airin discloses what she offers and will not push a herb that has not been screened for you.',
@@ -624,7 +636,7 @@ export const articles = [
     botanical: 'coconut',
     title: 'Breath Is How the Nervous System Speaks',
     intro: 'Regulation is not a personality trait. It is a practice you can modify or stop.',
-    image: images.portrait,
+    image: images.jungle,
     paragraphs: [
       'Cleansing the body without soothing the nervous system is how people burn out on wellness. Breath, rest, and simple orientation to the room are part of every container Airin holds — yoga, moon circle, mentoring, cacao evenings.',
       'A useful breath is unforced. If you feel dizzy, tingling or panicked, stop. Keep your eyes open. Sit instead of lying down. Nothing in this work requires you to “go deeper” than feels safe.',
@@ -650,7 +662,7 @@ export const articles = [
     botanical: 'frangipani',
     title: 'Mindset Is a Daily Ritual, Not a Spell',
     intro: 'Manifestation, in this practice, is what happens when the body is resourced enough to follow a true yes.',
-    image: images.moon,
+    image: images.journalDesk,
     paragraphs: [
       'When the gut is overloaded and the nervous system is braced, “think positive” is another demand. Airin’s work flips the order: nourish, cleanse what you can, move, sleep — then notice what you actually want.',
       'Journaling, new-moon intention and full-moon release are tools for that noticing. They do not replace money, medicine or boundaries. They do give a place to hear yourself.',
@@ -663,7 +675,7 @@ export const articles = [
     botanical: 'lotus',
     title: 'Sacred Living Is Made of Ordinary Hours',
     intro: 'Akasha, in the five elements, is ritual, presence and intuition — usually smaller than we think.',
-    image: images.moon,
+    image: images.journalDesk,
     paragraphs: [
       'A candle, a cup of tea, five minutes of breath, a walk at dusk, dancing in the kitchen: these are the sacred daily rituals the brand is built on. They work because they repeat, not because they are dramatic.',
       'Seasonal cleanses and moon circles simply give those hours a shared clock. You can keep a ritual after the Zoom ends. You can also change it.',
@@ -676,7 +688,7 @@ export const articles = [
     botanical: 'banana',
     title: 'Dance Is Part of the Medicine',
     intro: 'She is a lover of dance and the ocean. Movement in this work is not only asana.',
-    image: images.coast,
+    image: images.goaBeach,
     paragraphs: [
       'Yoga, barre and conscious dance all appear in classes, retreats and the summer Wild Woman circle. Dance returns rhythm, pleasure and the simple fact of being in a body that can take up space.',
       'No performance standard. You can sway, sit, or mark the rhythm with a hand. Injury and pregnancy change the shape; they do not exclude you from the room.',
@@ -689,7 +701,7 @@ export const articles = [
     botanical: 'areca',
     title: 'Yoga as the Path That Brought Her Home',
     intro: 'The mat was never a brand. It was how a young woman in Hawaii began to heal childhood wounding.',
-    image: images.portrait,
+    image: images.shala,
     paragraphs: [
       'Twenty years of practice, fifteen years teaching, lineages in Bali, Kundalini Tantra, and the quiet of daily class: yoga in this house is a moving prayer, not a workout badge.',
       'Private Kundalini Tantra sessions, group classes, retreats and the breath inside a cleanse all come from that same love. Strength and softness are both allowed.',
