@@ -2,7 +2,7 @@ export const siteUrl = 'https://airin-aquarius.vercel.app';
 
 export const images = {
   coast: '/images/airin-coast.jpg',
-  portrait: '/images/airin-portrait.jpg',
+  portrait: '/images/airin-portrait-v2.jpg',
   ritual: '/images/ritual.jpg',
   moon: '/images/moon.jpg',
   path: '/images/pathway.jpg',
